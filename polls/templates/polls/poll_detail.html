@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ poll.title }}</title>
+</head>
+<body>
+    <h1>투표 제목 : {{ poll.title }}</h1>
+    <p>투표 내용 : {{ poll.content }}</p>
+    <p>찬성 : {{ poll.agrees }}</p>
+    <p>반대 : {{ poll.disagrees }}</p>
+    <p>생성일자 : {{ poll.created_at }}</p>
+
+    <form action="/polls/{{ poll.id }}/vote/" method="post">
+        {% csrf_token %}
+        <button type="submit" name="투표" value="agree">찬성</button>
+    </form>
+    
+    <form action="/polls/{{ poll.id }}/vote/" method="post">
+        {% csrf_token %}
+        <button type="submit" name="투표" value="disagree">반대</button>
+    </form>
+</body>
+</html>
