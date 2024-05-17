@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9o=!_60(4)fy0+%oxrjbo*5u@s8dmhfeon4&+jj14t9%9aq9!o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']   # 모든 접속 허용
 
 
 # Application definition
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'poll-db',
+        'USER': 'deokyoung',
+        'PASSWORD': 'mdy7722580!',
+        'HOST': 'mutsa-test-db.cfmagso24o5j.ap-northeast-2.rds.amazonaws.com',   #RDS 엔드포인트 주소\
+        'PORT': '3306'
     }
 }
 
