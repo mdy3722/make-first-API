@@ -80,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'poll-db',
-        'USER': 'mdy3722',
-        'PASSWORD': 'mdy7722580!',
+        'USER': '----',
+        'PASSWORD': '-----',
         'HOST': 'mutsa-test-db.cfmagso24o5j.ap-northeast-2.rds.amazonaws.com',   #RDS 엔드포인트 주소
         'PORT': '3306'
     }
