@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'poll-db',
-        'USER': 'deokyoung',
-        'PASSWORD': 'mdy7722580!',
-        'HOST': 'mutsa-test-db.cfmagso24o5j.ap-northeast-2.rds.amazonaws.com',   #RDS 엔드포인트 주소\
-        'PORT': '3306'
+        'NAME': '0000',
+        'USER': '00000',
+        'PASSWORD': '0000',
+        'HOST': '0000',   #RDS 엔드포인트 주소
+        'PORT': '0000'
     }
 }
 
